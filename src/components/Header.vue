@@ -52,11 +52,6 @@ const isNew = ref<number>(1)
   display: flex;
   background-color: rgba(65, 65, 65, 1);
   justify-content: space-around;
-  &__logo {
-    img {
-      
-    }
-  }
   &__menu {
     & > div {
       margin-right: 8px;

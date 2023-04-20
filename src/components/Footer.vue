@@ -3,7 +3,7 @@
 
 <template>
   <div class="footer">
-    <div class="container">
+    <div class="container flex">
       <p>会員登録</p>
       <p>運営会社</p>
       <p>利用規約</p>
@@ -15,13 +15,12 @@
 </template>
 <style lang="scss" scoped>
 .footer{
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
+  transform: scale(1);
   background: #414141;
   div{
-    display: flex;
+    height: 128px;
     justify-content: space-around;
+    align-items: center
   }
 }
 </style>

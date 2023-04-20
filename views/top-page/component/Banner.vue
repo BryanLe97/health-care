@@ -4,7 +4,7 @@
 <template>
     <div class="banner">
       <div class="flex">
-        <img class="banner__main-photo" src="../../../src/assets/imgs/main_photo.png" alt="">
+        <img class="banner__main-photo" src="../asset/imgs/main_photo.png" alt="">
         <div class="banner__graphic" />
       </div>
     </div>
@@ -16,7 +16,7 @@
         flex: 0 0 auto;
     }
     &__graphic{
-      background-image: url('../../src/assets/imgs/main_graph.png');
+      background-image: url('../asset/imgs/main_graph.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;

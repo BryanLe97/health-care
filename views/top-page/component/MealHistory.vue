@@ -1,0 +1,74 @@
+<script setup lang="ts">import { ref } from 'vue'
+interface Meal {
+  src: string;
+}
+const mealHistory = ref<Meal[]>([
+    {
+        src: 'views/top-page/asset/imgs/d01.jpg'
+    },
+    {
+        src: 'views/top-page/asset/imgs/d02.jpg'
+    },
+    {
+        src: 'views/top-page/asset/imgs/l01.jpg'
+    },
+    {
+        src: 'views/top-page/asset/imgs/l02.jpg'
+    },
+    {
+        src: 'views/top-page/asset/imgs/l03.jpg'
+    },
+    {
+        src: 'views/top-page/asset/imgs/m01.jpg'
+    },
+    {
+        src: 'views/top-page/asset/imgs/m02.jpg'
+    },
+    {
+        src: 'views/top-page/asset/imgs/m03.jpg'
+    }
+])
+</script>
+
+<template>
+    <div class="meal-his flex container">
+        <div    
+            v-for="arr in mealHistory" 
+            :id="arr.src"
+            class="meal-his__photo"
+            
+        >
+            <img :src="arr.src" />
+        </div>
+        <button class="meal-his__btn">記録をもっと見るs</button>
+    </div>
+</template>
+<style lang="scss" scoped>
+.meal-his{
+    flex-wrap: wrap;
+    justify-content: center;
+    &__photo{
+        width: 23%;
+        position: relative;
+        display: block;
+        padding-top: 23%;
+        margin: 4px;
+        img{
+            // display: block; 
+            // max-width: 100%; 
+            // height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    }
+    &__btn {
+        margin: 20px auto;
+        color: #ffff;
+        background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+    }
+}
+</style>
