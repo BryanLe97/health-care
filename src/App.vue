@@ -22,8 +22,15 @@ import HeaderPage from './components/Header.vue';
 <style lang="scss" scoped>
 .layout {
   .main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     .main-header {
       background: #414141;
+    }
+    .main-content {
+      flex: 1;
+      margin: 20px 0;
     }
   }
 }
