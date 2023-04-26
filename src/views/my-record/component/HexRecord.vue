@@ -4,21 +4,21 @@
 <template>
     <div class="hex-record flex container">
         <div class="hex-record__box">
-            <img class="hex-record__img" src="../assets/MyRecommend-1.jpg">
+            <div class="hex-record__img hex-record__img--img-1"></div>
             <div class="hex-record__text">
                 <p class="hex-record__text--yellow">BODY RECORD</p>
                 <p class="hex-record__text--bg-orange">自分のカラダの記録</p>
             </div>
         </div>
         <div class="hex-record__box">
-            <img class="hex-record__img" src="../assets/MyRecommend-2.jpg">
+            <div class="hex-record__img hex-record__img--img-2"></div>
             <div class="hex-record__text">
                 <p class="hex-record__text--yellow">MY EXERCISE</p>
                 <p class="hex-record__text--bg-orange">自分の運動の記録</p>
             </div>
         </div>
         <div class="hex-record__box">
-            <img class="hex-record__img" src="../assets/MyRecommend-3.jpg">
+            <div class="hex-record__img hex-record__img--img-3"></div>
             <div class="hex-record__text">
                 <p class="hex-record__text--yellow">MY DIARY</p>
                 <p class="hex-record__text--bg-orange">自分の日記</p>
@@ -37,7 +37,11 @@
         height: 100%;
         object-fit: cover;
         mix-blend-mode: luminosity;
+        background-color: #2E2E2E;
         opacity: 0.25;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         &--img-1{
             background-image: url('../assets/MyRecommend-1.jpg');
         }

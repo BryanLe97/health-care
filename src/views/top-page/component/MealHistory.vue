@@ -7,28 +7,28 @@ interface Meal {
 }
 const mealHistory = ref<Meal[]>([
     {
-        src: 'views/top-page/asset/imgs/d01.jpg'
+        src: 'src/views/top-page/asset/imgs/d01.jpg'
     },
     {
-        src: 'views/top-page/asset/imgs/d02.jpg'
+        src: 'src/views/top-page/asset/imgs/d02.jpg'
     },
     {
-        src: 'views/top-page/asset/imgs/l01.jpg'
+        src: 'src/views/top-page/asset/imgs/l01.jpg'
     },
     {
-        src: 'views/top-page/asset/imgs/l02.jpg'
+        src: 'src/views/top-page/asset/imgs/l02.jpg'
     },
     {
-        src: 'views/top-page/asset/imgs/l03.jpg'
+        src: 'src/views/top-page/asset/imgs/l03.jpg'
     },
     {
-        src: 'views/top-page/asset/imgs/m01.jpg'
+        src: 'src/views/top-page/asset/imgs/m01.jpg'
     },
     {
-        src: 'views/top-page/asset/imgs/m02.jpg'
+        src: 'src/views/top-page/asset/imgs/m02.jpg'
     },
     {
-        src: 'views/top-page/asset/imgs/m03.jpg'
+        src: 'src/views/top-page/asset/imgs/m03.jpg'
     }
 ])
 </script>
@@ -67,11 +67,6 @@ const mealHistory = ref<Meal[]>([
             height: 100%;
             object-fit: cover; 
         }
-    }
-    &__btn {
-        margin: 20px auto;
-        color: #ffff;
-        background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
     }
 }
 </style>

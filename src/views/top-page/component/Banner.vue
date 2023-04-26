@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import HCChart from '../../../components/global/HCChart.vue'
+
 </script>
 
 <template>
@@ -8,7 +10,9 @@
           <img src="../asset/imgs/main_photo.png" alt="">
           <img class="banner__main-photo-text" src="../asset/imgs/main_photo_text.png" alt="">
         </div>
-        <div class="banner__graphic" />
+        <div class="banner__graphic" >
+          <h-c-chart />
+        </div>
       </div>
     </div>
 </template>
@@ -26,10 +30,8 @@
       transform: translate(-50%, -50%);
     }
     &__graphic{
-      background-image: url('../asset/imgs/main_graph.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+      display: flex;
+      justify-content: center;
       flex: 1 1 auto;
       padding: 0 20px;
     }
