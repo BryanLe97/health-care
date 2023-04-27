@@ -43,7 +43,7 @@ const mealHistory = ref<Meal[]>([
         >
             <img :src="arr.src" />
         </div>
-        <button @click="router.push({ name: 'my-record' })" class="meal-his__btn">記録をもっと見るs</button>
+        <button @click="router.push({ name: 'my-record' })">記録をもっと見るs</button>
     </div>
 </template>
 <style lang="scss" scoped>
